@@ -1,0 +1,13 @@
+<h1> In the Fridge</h1>
+
+<table>
+<% @foods.each do |food| %>
+<tr>
+<td><%= food.name %></td>
+<td><%= food.food_type %></td>
+<td><%= food.expiration %></td>
+
+<% end %>
+
+
+</table>
