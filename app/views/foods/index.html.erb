@@ -1,11 +1,12 @@
 <h1> In the Fridge</h1>
 
+<a href='/foods/new'>Create a new food</a>
+
 <table>
 <% @foods.each do |food| %>
 <tr>
-<td><%= food.name %></td>
-<td><%= food.food_type %></td>
-<td><%= food.expiration %></td>
+<td><%= link_to food.name, food %></td>
+
 
 <% end %>
 
